@@ -1,0 +1,20 @@
+package com.reactive.productdeep.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class ProductResponse {
+    private List<Product> products;
+    private Integer total;
+    private Integer skip;
+    private Integer limit;
+
+}
